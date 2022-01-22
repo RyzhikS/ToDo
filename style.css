@@ -26,6 +26,11 @@ input, button {
     border: none;
     outline: none;
     background: none;
+    transition: 0.5s;
+}
+
+button:hover {
+    transform: scale(1.1);
 }
 
 .todo {
@@ -82,6 +87,10 @@ input, button {
     margin-right: 1rem;
     color: white;
     font-size: 1.1rem;
+}
+.todo-form__input:focus,
+.todo-list-item__text:focus {
+    box-shadow: 0 0 6px rgb(88, 88, 88) inset;
 }
 
 .todo-list-item__edit,
