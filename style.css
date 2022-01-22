@@ -1,0 +1,101 @@
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: lightgray;
+    align-items: center;
+    justify-content: center;
+
+}
+
+input, button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.todo {
+    max-width: 900px;
+    width: 100%;
+    padding: 2rem;
+    box-shadow: 0 0 6px black;
+}
+
+.todo__title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.todo-form {
+    display: flex;
+    margin-bottom: 2rem;
+}
+.todo-form__input {
+    flex: 1 1 0%;
+    background-color: darkgray;
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin-right: 2rem;
+    color: white;
+    font-size: 1.3rem;
+}
+.todo-form__button {
+    font-weight: 600;
+    font-size: 3rem;
+    color: rgb(24, 204, 39);
+    cursor: pointer;
+
+}
+
+.todo-list {
+    padding: 1rem;
+}
+.todo-list__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.todo-list-item {
+    display: flex;
+    padding: 1.5rem;
+    border-top: 2px solid white;
+}
+
+.todo-list-item__text {
+    flex: 1 1 0%;
+    padding: 0.7rem;
+    background-color: darkgray;
+    border-radius: 6px;
+    margin-right: 1rem;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.todo-list-item__edit,
+.todo-list-item__delete {
+    width: 4%;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.todo-list-item__edit {
+    color: blue;
+}
+.todo-list-item__delete {
+    color: red;
+}
